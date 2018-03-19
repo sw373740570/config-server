@@ -8,6 +8,8 @@ druid:
     url: jdbc:sqlserver://172.25.150.153:1433;databaseName=Leasehold
     username: tslc_test
     password: tslc_test123.
+    #链接MSSQL，不设置的话会报错：查询超时值 -1 无效。
+    validationQueryTimeout: 10
     #初始化连接数量，最大最小连接数
     initialSize: 5
     maxActive: 10

@@ -25,7 +25,8 @@ druid:
     #配置一个连接在池中最小生存的时间，单位是毫秒
     minEvictableIdleTimeMillis: 300000
     #用来检测连接是否有效的sql，要求是一个查询语句
-    validationQuery: SELECT 1 FROM DUAL
+    #MSSQL 'DUAL' 无效
+    #validationQuery: SELECT 1 FROM DUAL
     #申请连接的时候检测
     testWhileIdle: true
     #申请连接时执行validationQuery检测连接是否有效，配置为true会降低性能

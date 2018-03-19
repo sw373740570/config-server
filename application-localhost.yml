@@ -2,3 +2,12 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8765/eureka/
+jdbc:
+  driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  url: jdbc:sqlserver://172.25.150.153:1433;databaseName=Leasehold
+  username: tslc_test
+  password: tslc_test123.
+
+#mybatis config
+mybatis:
+  typeAliasesPackage: com.tslc.**.model

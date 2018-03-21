@@ -43,3 +43,4 @@ druid:
 #mybatis config
 mybatis:
   typeAliasesPackage: com.tslc.**.model
+testStr: testStr123
